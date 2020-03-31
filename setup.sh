@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-set -n # only read command but do not execute them
-set -o noexec
+# set -n # only read command but do not execute them
+# set -o noexec
+
+set -x
 
 # sudo warn :)
 sudo sh -c "echo Defaults lecture="always" >> /etc/sudoers"
