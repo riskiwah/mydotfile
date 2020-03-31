@@ -56,11 +56,11 @@ media(){
 
 main(){
     install_utils
-    vscode
-    zsh
-    docker
-    gcloud
-    media
+    # vscode
+    # zsh
+    # docker
+    # gcloud
+    # media
 }
 
 main
