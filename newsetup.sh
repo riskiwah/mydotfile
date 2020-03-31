@@ -12,6 +12,7 @@ create_dir(){
 }
 
 install_utils(){
+    sudo apt update && sudo apt upgrade -y
     sudo -s -- <<EOF
     sudo apt install ${utils[@]} -y
 EOF
@@ -51,12 +52,6 @@ gcloud(){
 media(){
     sudo add-apt-repository ppa:nilarimogard/webupd8
     sudo apt install audacious audacious-plugins
-}
-
-install_utils(){
-    sudo -s -- <<EOF
-    sudo apt install ${utils[@]} -y
-EOF
 }
 
 main(){
