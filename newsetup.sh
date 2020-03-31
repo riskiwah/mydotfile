@@ -22,7 +22,7 @@ vscode(){
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
     sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
     sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-    sudo apt install code
+    sudo apt install code -y
 }
 
 zsh(){
@@ -47,20 +47,21 @@ gcloud(){
     echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
     curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
     sudo apt-get update && sudo apt-get install google-cloud-sdk -y
+    sudo apt install kubectl
 }
 
 media(){
     sudo add-apt-repository ppa:nilarimogard/webupd8
-    sudo apt install audacious audacious-plugins
+    sudo apt install audacious audacious-plugins -y
 }
 
 main(){
     install_utils
-    # vscode
-    # zsh
-    # docker
-    # gcloud
-    # media
+    vscode
+    zsh
+    docker
+    gcloud
+    media
 }
 
 main
