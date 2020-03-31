@@ -1,5 +1,12 @@
-# MY DotFile
+# My Dotfile
+---
+Welcome to my simple dotfiles
 
-### Todo
-- check kubectl completion again 
-- check gcloud component again
+
+## About
+
+### Fresh Install
+Just run
+```
+./newsetup.sh
+```

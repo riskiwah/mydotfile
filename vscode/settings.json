@@ -1,0 +1,33 @@
+{
+    "window.menuBarVisibility": "default",
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.startupEditor": "none",
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "files.autoGuessEncoding": true,
+    "editor.formatOnPaste": true,
+    "update.showReleaseNotes": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/coverage": true,
+        "**/log": true,
+        "**/public/uploads": true
+    }
+}

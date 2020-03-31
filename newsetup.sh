@@ -2,7 +2,7 @@
 
 set -x
 
-utils=(htop curl plank git firefox wget
+pack=(htop curl plank git firefox wget
       apt-transport-https dconf-cli uuid-runtime
       zsh ca-certificates gnupg-agent software-properties-common
       eog)
@@ -14,7 +14,7 @@ create_dir(){
 install_utils(){
     sudo apt update && sudo apt upgrade -y
     sudo -s -- <<EOF
-    sudo apt install ${utils[@]} -y
+    sudo apt install ${pack[@]} -y
 EOF
 }
 
@@ -26,7 +26,7 @@ vscode(){
 }
 
 zsh(){
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     chsh -s "$(which zsh)"
     cp -v ./zsh/test2 ~/.oh-my-zsh/themes/test2.zsh-theme
     cp -v zsh/.zshrc ~/.zshrc
@@ -65,4 +65,4 @@ main(){
 }
 
 main
-echo "hehe"
+echo "done"
