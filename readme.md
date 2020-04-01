@@ -10,3 +10,5 @@ Just run
 ```
 ./newsetup.sh
 ```
+
+WIP check [todo](todo.md)
