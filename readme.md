@@ -1,5 +1,4 @@
 # My Dotfile
----
 Welcome to my simple dotfiles
 
 
@@ -16,5 +15,7 @@ Run
 ```
 ./vscode/setupext.sh
 ```
+### Vanilla Screenshot
+![ss](/img/ss.png)
 
 WIP check [todo](todo.md)
