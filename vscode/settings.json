@@ -1,7 +1,7 @@
 {
     "window.menuBarVisibility": "default",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "workbench.colorTheme": "Default Dark+",
     "workbench.iconTheme": "vs-seti",
     "workbench.startupEditor": "none",
