@@ -28,7 +28,7 @@ vscode(){
 zsh(){
     yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     chsh -s "$(which zsh)"
-    ln -sfv $HOME/code/mydotfile/zsh/test2.zsh-theme ~/.oh-my-zsh/themes/test2.zsh-theme
+    ln -sfv $HOME/code/mydotfile/zsh/test2.zsh-theme $ZSH/themes/test2.zsh-theme
     ln -sfv $HOME/code/mydotfile/zsh/.zshrc ~/.zshrc
 }
 

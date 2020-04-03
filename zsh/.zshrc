@@ -1,11 +1,12 @@
-# autoload -Uz compinit
-# compinit
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# Completion tweak
+autoload -Uz compinit && compinit
+ZLE_REMOVE_SUFFIX_CHARS=""
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # export PATH="$PATH:/home/riskiwah/code/bridestory/istio-1.0.5/bin"
 # export PATH="$PATH:/home/riskiwah/istio-1.0.5/bin"
 
-# my alias
+# My alias
 alias turnoff="sudo shutdown -h now"
 alias cleanup="sync;sudo sysctl -w vm.drop_caches=3"
 alias reload=". ~/.zshrc && exec $SHELL -l"
@@ -116,21 +117,6 @@ alias bye="clear; exit"
 
 # # Krew Path
 # export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-# Ps1 Path *active it for enable
-#PROMPT=$PROMPT'$(kube_ps1) '
-
-# for autocomplete my kubectl
-#source <(kubectl completion zsh)
-#export PATH=$HOME/bin:$PATH
-#if [ /home/riskiwah/google-cloud-sdk/bin/kubectl ]; then source <(kubectl completion zsh); fi
-#"if [ $commands[kubectl] ]; then source <(kubectl completion zsh); fi" >> ~/.zshrc 
-# tmux session
-#if which tmux 2>&1 >/dev/null; then
-#  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-#    tmux attach -t hack || tmux new -s hack; exit
-#  fi
-#fi
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/riskiwah/google-cloud-sdk/path.zsh.inc' ]; then . '/home/riskiwah/google-cloud-sdk/path.zsh.inc'; fi
