@@ -18,6 +18,7 @@ source $ZSH/oh-my-zsh.sh
 # My aliases
 alias turnoff="sudo shutdown -h now"
 alias cleanup="sync;sudo sysctl -w vm.drop_caches=3"
+alias myip="curl -s ipinfo.io | jq"
 alias reload=". ~/.zshrc && exec $SHELL -l"
 alias ls="ls -F --color=auto"
 alias k="kubectl"

@@ -5,7 +5,7 @@ set -x
 pack=(htop curl plank git firefox wget
       apt-transport-https dconf-cli uuid-runtime
       zsh ca-certificates gnupg-agent software-properties-common
-      ristretto)
+      ristretto jq)
 
 create_dir(){
     mkdir .themes .icon
