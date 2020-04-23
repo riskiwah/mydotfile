@@ -24,9 +24,17 @@ alias ls="ls -F --color=auto"
 alias k="kubectl"
 alias bye="clear; exit"
 
+<<<<<<< HEAD
 # # GO path
 export PATH=$PATH:$(go env GOPATH)/bin
+=======
+# GO path
+export PATH=$PATH:$(go env GOPATH)/bin
+# export GOROOT=/usr/local/go
+# export GOPATH=$HOME/go
+# export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+>>>>>>> 6e4257806d5b3a6b8c50d811606458c0bb5ee661
 
-# # Krew Path
-# export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+# Krew Path
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
