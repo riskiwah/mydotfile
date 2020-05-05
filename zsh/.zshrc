@@ -4,9 +4,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZLE_REMOVE_SUFFIX_CHARS=""
 ZSH_THEME="test2"
 
-plugins=(git 
-        docker 
-        docker-compose 
+plugins=(git
+        docker
+        docker-compose
         kubectl
         gcloud
 )

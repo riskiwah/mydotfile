@@ -2,7 +2,12 @@
 
 set -x
 
-pack=(htop curl plank git firefox wget
+if [ "$(id -u)" != "0" ]; then
+    echo "please use sudo!"
+    exit 1
+fi
+
+pack=(htop curl plank git firefox wget openvpn
       apt-transport-https dconf-cli uuid-runtime
       zsh ca-certificates gnupg-agent software-properties-common
       ristretto jq)
@@ -26,9 +31,9 @@ vscode(){
 }
 
 zsh(){
-    yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     chsh -s "$(which zsh)"
-    ln -sfv $HOME/code/mydotfile/zsh/test2.zsh-theme $ZSH/themes/test2.zsh-theme
+    yes | sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ln -sfv $HOME/code/mydotfile/zsh/test2.zsh-theme "$ZSH"/themes/test2.zsh-theme
     ln -sfv $HOME/code/mydotfile/zsh/.zshrc ~/.zshrc
 }
 
@@ -55,12 +60,24 @@ gcloud(){
     sudo apt install kubectl
 }
 
+spotify(){
+    curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
+    echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+    sudo apt-get update && sudo apt-get install spotify-client
+}
+
+chrome(){
+    wget -P "$HOME"/Downloads https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo dpkg -i "$HOME"/Downloads/google-chrome-stable_current_amd64.deb
+}
+
 media(){
     sudo add-apt-repository ppa:nilarimogard/webupd8
     sudo apt install audacious audacious-plugins -y
 }
 
 main(){
+    create_dir
     install_utils
     vscode
     zsh

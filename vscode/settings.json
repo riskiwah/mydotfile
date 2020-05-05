@@ -29,5 +29,7 @@
         "**/coverage": true,
         "**/log": true,
         "**/public/uploads": true
-    }
+    },
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true
 }
