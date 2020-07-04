@@ -11,11 +11,11 @@ window:
    columns: 80
    lines: 24
 
-  padding:
-   x: 2
-   y: 2
+  # padding:
+  #  x: 0
+  #  y: 0
 
-  dynamic_padding: false
+  dynamic_padding: true
   decorations: full
   startup_mode: Windowed
   title: Alacritty
@@ -23,6 +23,13 @@ window:
 scrolling:
   history: 10000
   multiplier: 3
+
+shell:
+  program: /bin/bash
+  args:
+    - -l
+    - -c
+    - "tmux"
 
 font:
   normal:
@@ -46,56 +53,57 @@ font:
 
 colors:
   primary:
-   background: '#2b2b2b'
-   foreground: '#eaeaea'
+   background: '0x232627'
+   foreground: '0xfcfcfc'
 
     #dim_foreground: '#9a9a9a'
-    #bright_foreground: '#ffffff'
+    #bright_foreground: '#f3f4f5'
 
   cursor:
-   text: '#EEEEEC'
-   cursor: '#EEEEEC'
+   text: '#212121'
+   cursor: '#c0c5ce'
 
   selection:
    text: '#163B59'
    background: '#B7B7B7'
 
-  #normal:
-  #  black:   '#000000'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e6c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0ba'
-  #  white:   '#eaeaea'
+  normal:
+    black: '0x232627'
+    red: '0xed1515'
+    green: '0x11d116'
+    yellow: '0xf67400'
+    blue: '0x1d99f3'
+    magenta: '0x9b59b6'
+    cyan: '0x1abc9c'
+    white: '0xfcfcfc'
 
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#ff3334'
-  #  green:   '#9ec400'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#b77ee0'
-  #  cyan:    '#54ced6'
-  #  white:   '#ffffff'
+  bright:
+    black: '0x7f8c8d'
+    red: '0xc0392b'
+    green: '0x1cdc9a'
+    yellow: '0xfdbc4b'
+    blue: '0x3daee9'
+    magenta: '0x8e44ad'
+    cyan: '0x16a085'
+    white: '0xffffff'
 
-  #dim:
-  #  black:   '#000000'
-  #  red:     '#8c3336'
-  #  green:   '#7a8530'
-  #  yellow:  '#97822e'
-  #  blue:    '#506d8f'
-  #  magenta: '#80638e'
-  #  cyan:    '#497e7a'
-  #  white:   '#9a9a9a'
+
+  dim:
+    black: '0x31363b'
+    red: '0x783228'
+    green: '0x17a262'
+    yellow: '0xb65619'
+    blue: '0x1b668f'
+    magenta: '0x614a73'
+    cyan: '0x186c60'
+    white: '0x63686d'
 
   #indexed_colors: []
 
 background_opacity: 1.0
 
 selection:
-  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  semantic_escape_chars: ",?`|:\"' ()[]{}<>\t"
   save_to_clipboard: false
 
 cursor:
