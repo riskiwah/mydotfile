@@ -29,7 +29,7 @@ shell:
   args:
     - -l
     - -c
-    - "tmux"
+    - "tmux attach || tmux new"
 
 font:
   normal:
