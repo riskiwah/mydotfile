@@ -31,5 +31,6 @@
         "**/public/uploads": true
     },
     "workbench.activityBar.visible": true,
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "go.formatTool": "goimports"
 }

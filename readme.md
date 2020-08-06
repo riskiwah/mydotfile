@@ -1,20 +1,12 @@
 # My Dotfile
 Welcome to my simple dotfiles
 
+## Fresh install
 
-## About
-
-### Fresh Install
-Just run
-```
-./newsetup.sh
+```bash
+./init.sh
 ```
 
-### Vscode ext
-Run
-```
-./vscode/setupext.sh
-```
 ### Vanilla Screenshot
 ![ss](/img/ss.png)
 
