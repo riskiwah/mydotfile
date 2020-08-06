@@ -7,7 +7,7 @@ Welcome to my simple dotfiles
 ./init.sh
 ```
 
-### Vanilla Screenshot
-![ss](/img/ss.png)
+### Screenshot
+![ss](./img/ss.png)
 
 WIP check [todo](todo.md)
