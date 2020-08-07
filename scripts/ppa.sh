@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-PPA_PATH="./ppa-apps"
+PPA_PATH="./scripts/ppa-apps"
 
 bash "$PPA_PATH"/chrome.sh
 bash "$PPA_PATH"/docker.sh
