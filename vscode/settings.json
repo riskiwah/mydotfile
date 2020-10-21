@@ -32,5 +32,6 @@
     },
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
-    "go.formatTool": "goimports"
+    "go.formatTool": "goimports",
+    "python.showStartPage": false
 }
