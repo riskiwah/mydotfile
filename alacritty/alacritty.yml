@@ -18,7 +18,7 @@ window:
   dynamic_padding: true
   decorations: full
   startup_mode: Windowed
-  title: Alacritty
+  title: thinkbox
 
 scrolling:
   history: 10000
@@ -45,11 +45,11 @@ font:
   size: 12.0
   offset:
    x: 0
-   y: 14
+   y: 0
 
   glyph_offset:
    x: 0
-   y: 7
+   y: 0
 
 colors:
   primary:
