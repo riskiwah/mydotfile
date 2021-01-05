@@ -27,7 +27,7 @@ alias bye="clear; exit"
 # Gothings
 export PATH=$PATH:$(go env GOPATH)/bin
 # export GOROOT=/usr/local/go
-# export GOPATH=$HOME/go
+export GOPATH=$HOME/code/go
 # export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 # Krew Path

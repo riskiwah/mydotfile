@@ -178,3 +178,21 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Gnome daemon
+exec --no-startup-id /usr/lib/gsd-xsettings
+
+# Gnome Power Manager
+exec_always --no-startup-id gnome-power-manager
+
+# Gnome polkit
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Gnome Flashback
+exec --no-startup-id gnome-flashback
+
+# Rofi things
+bindsym $mod+d exec --no-startup-id " rofi -show drun  -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"' -show-icons"
+
+# Feh bg
+exec --no-startup-id feh --bg-fill ~/Downloads/coffee_cup_wooden_surface_106291_1920x1080.jpg
