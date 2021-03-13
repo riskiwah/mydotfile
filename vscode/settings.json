@@ -1,7 +1,7 @@
 {
     "window.menuBarVisibility": "default",
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.startupEditor": "none",
     "explorer.confirmDragAndDrop": false,

@@ -17,7 +17,7 @@ window:
 
   dynamic_padding: true
   decorations: full
-  startup_mode: Windowed
+  startup_mode: Maximized
   title: Terminal
 
 scrolling:
@@ -25,19 +25,21 @@ scrolling:
   multiplier: 3
 
 shell:
-  program: /usr/bin/tmux
+  program: /bin/zsh
   args:
-    - -u
+    - -l
+    - -c 
+    - tmux
 
 font:
   normal:
-    family: monospace
+    family: Menlo
     style: Regular
   bold:
-    family: monospace
+    family: Menlo
     style: Bold
   italic:
-    family: monospace
+    family: Menlo
     style: Italic
 
   scale_with_dpi: true
@@ -105,7 +107,7 @@ mouse:
 
 url:
   launcher:
-    program: xdg-open
+    program: open
 
 key_bindings:
   - { key: Paste, action: Paste }
@@ -115,6 +117,27 @@ key_bindings:
   - { key: Equals, mods: Control, action: IncreaseFontSize }
   - { key: Minus, mods: Control, action: DecreaseFontSize }
   - { key: N, mods: Control, action: SpawnNewInstance }
+
+  # (macOS only)
+  - { key: K,              mods: Command, mode: ~Vi|~Search, chars: "\x0c"            }
+  - { key: K,              mods: Command, mode: ~Vi|~Search, action: ClearHistory     }
+  - { key: Key0,           mods: Command,                    action: ResetFontSize    }
+  - { key: Equals,         mods: Command,                    action: IncreaseFontSize }
+  - { key: Plus,           mods: Command,                    action: IncreaseFontSize }
+  - { key: NumpadAdd,      mods: Command,                    action: IncreaseFontSize }
+  - { key: Minus,          mods: Command,                    action: DecreaseFontSize }
+  - { key: NumpadSubtract, mods: Command,                    action: DecreaseFontSize }
+  - { key: V,              mods: Command,                    action: Paste            }
+  - { key: C,              mods: Command,                    action: Copy             }
+  - { key: C,              mods: Command, mode: Vi|~Search,  action: ClearSelection   }
+  - { key: H,              mods: Command,                    action: Hide             }
+  - { key: M,              mods: Command,                    action: Minimize         }
+  - { key: Q,              mods: Command,                    action: Quit             }
+  - { key: W,              mods: Command,                    action: Quit             }
+  - { key: N,              mods: Command,                    action: SpawnNewInstance }
+  - { key: F,              mods: Command|Control,            action: ToggleFullscreen }
+  - { key: F,              mods: Command, mode: ~Search,     action: SearchForward    }
+  - { key: B,              mods: Command, mode: ~Search,     action: SearchBackward   }
 
 debug:
   render_timer: false
