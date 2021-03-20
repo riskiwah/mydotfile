@@ -9,6 +9,7 @@ plugins=(git
         docker-compose
         kubectl
         gcloud
+        zsh-completions
 )
 
 autoload -U compinit && compinit
@@ -25,9 +26,9 @@ alias k="kubectl"
 alias bye="clear; exit"
 
 # Gothings
-export PATH=$PATH:$(go env GOPATH)/bin
 # export GOROOT=/usr/local/go
 export GOPATH=$HOME/code/go
+export PATH="$(go env GOPATH)/bin:${PATH}"
 # export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 # Krew Path
