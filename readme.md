@@ -10,4 +10,7 @@ Welcome to my simple dotfiles
 ### Screenshot
 ![ss](./img/ss.png)
 
-WIP check [todo](todo.md)
+---
+*Highly inspired from* [jessfraz](https://github.com/jessfraz/dotfiles)
+
+**WIP** [todo](todo.md)
