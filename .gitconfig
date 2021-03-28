@@ -1,0 +1,19 @@
+[user]
+    name = riskiwah
+    email = riskiwah@yandex.com
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
+[commit]
+    gpgsign = false
+
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+
+[rerere]
+    enabled = true

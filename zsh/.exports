@@ -1,0 +1,9 @@
+# history
+export HISTIGNORE=" *:ls:cd:cd -:pwd:exit:date:* --help:* -h:pony:pony add *:pony update *:pony save *:pony ls:pony ls *";
+
+# UTF-8
+export LANG="en_US.UTF-8";
+export LC_ALL="en_US.UTF-8";
+
+# Man page
+export MANPAGER="less -X";
