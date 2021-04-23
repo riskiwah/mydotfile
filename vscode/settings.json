@@ -2,7 +2,6 @@
     "window.menuBarVisibility": "default",
     "explorer.confirmDelete": false,
     "window.zoomLevel": 0,
-    "workbench.iconTheme": "vscode-great-icons",
     "workbench.startupEditor": "none",
     "explorer.confirmDragAndDrop": false,
     "terminal.integrated.shell.linux": "/usr/bin/zsh",
@@ -36,5 +35,8 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.fontSize": 15,
-    "terminal.integrated.fontFamily": "monospace"
+    "terminal.integrated.fontFamily": "Menlo",
+    "terminal.integrated.fontSize": 14,
+    "workbench.iconTheme": "vscode-great-icons",
+    "go.toolsManagement.autoUpdate": true
 }
