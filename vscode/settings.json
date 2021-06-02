@@ -38,5 +38,6 @@
     "terminal.integrated.fontFamily": "Menlo",
     "terminal.integrated.fontSize": 14,
     "workbench.iconTheme": "vscode-great-icons",
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": false
 }

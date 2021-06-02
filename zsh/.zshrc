@@ -10,7 +10,8 @@ plugins=(git
         kubectl
         gcloud
 )
-
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh

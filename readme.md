@@ -11,3 +11,6 @@ Welcome to my simple dotfiles
 ![ss](./img/ss.png)
 
 WIP check [todo](todo.md)
+
+
+fc-list : family | grep -i powerline
